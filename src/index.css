@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Public Sans", sans-serif;
+
+  --color-primary: #005bbf;
+  --color-primary-hover: #004493;
+  --color-secondary: #525f73;
+  --color-accent: #2b5ab5;
+  --color-surface: #f8f9fa;
+  --color-border: #e1e3e4;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-slate-900 font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap');
